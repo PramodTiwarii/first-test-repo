@@ -1,2 +1,2 @@
 # first-test-repo
-Hello viewer, I'm Pramod Tiwari, trying to learn 'Git a Bit'
+Hi viewer!, I'm Pramod Tiwari, trying to learn 'Git a Bit'
