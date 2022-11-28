@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!-- <style>
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
@@ -66,8 +70,7 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 </style>
-</head>
-<body bgcolor="black">
+Insert body tag here!!
 <center><h2 style="color: white!important;">Automatic Slideshow</h2>
 <p style="color: white!important;">Change image every 2 seconds:</p></center>
 
@@ -100,34 +103,53 @@ img {vertical-align: middle;}
   <span class="dot"></span> 
 </div>
 
-<video controls autoplay muted>
+-->
+
+  <h1>Hello World!</h1>
+
+  <pre>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni autem porro repellat hic perferendis nulla
+    doloremque voluptate labore sapiente reiciendis saepe nesciunt fuga aperiam quisquam eveniet, magnam dicta excepturi
+    cupiditate!</pre>
+
+  <video controls autoplay muted>
     <source src="/home/pramod/Downloads/Test Material/Videos/videoplayback.mp4" type="video/mp4">
-</video>
+  </video>
+  <br>
+  <br>
+  <audio controls>
+    <source src="/home/pramod/Downloads/Test Material/Audio/file_example_MP3_700KB.mp3" type="Audio/mp3">
+  </audio>
+  <br>
+  <br>
+  <form>
+    <label for="firstName">First Name:</label>
+    <input id="firstName" type="text">
 
-<audio controls>
-  <source src="/home/pramod/Downloads/Test Material/Audio/file_example_MP3_700KB.mp3" type="Audio/mp3">
-</audio>
+  </form>
 
-<script>
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
 </body>
-</html> 
+
+</html>
